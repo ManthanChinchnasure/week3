@@ -5,6 +5,10 @@ console.log(mv);
 
 
 
+const contents2 = fs.readFileSync("b.txt", "utf-8");
+console.log(contents2);
+
+
 
 // where a readFileSync why use of the capital letter of filesync captil letter?
 
@@ -55,7 +59,4 @@ Sync → type (synchronous)
 
 
 
-// const fs = require("fs");
 
-// const contents = fs.readFileSync("a.txt", "utf-8");
-// console.log(contents);
