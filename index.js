@@ -16,3 +16,28 @@ console.log(ans3);
 
 
 // it synchronous code  where the code run line by line..
+
+/*
+What Does "Sync" Mean?
+
+There are 2 versions in Node.js:
+
+1️⃣ readFileSync() → Synchronous
+
+Blocks the program
+
+Waits until file is fully read
+
+Then moves to next line
+
+
+
+2️⃣ readFile() → Asynchronous
+
+Does NOT block
+
+Reads file in background
+
+Uses callback function
+
+*/
