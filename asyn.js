@@ -57,3 +57,23 @@ for (let i=0; i< 10000; i++ ) {
 }
 
 console.log(s);
+
+
+/*
+
+Because:
+
+1️⃣ fs.readFile() is asynchronous
+
+It does NOT wait for the file to finish reading.
+
+Node.js sends the file-reading task to the background and continues executing the next lines of code.
+
+So this happens:
+
+1. Start reading a.txt (in background)
+2. Run for loop
+3. Print sum (s)
+4. When file reading completes → run callback → print content
+
+*/
